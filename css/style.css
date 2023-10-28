@@ -1,4 +1,4 @@
-@import url(_fonts.css);
+@import url(fonts.css);
 
 /* Hard */
 
@@ -582,6 +582,95 @@ h5 {
 }
 
 
+.catalog-main {
+    padding: 50px 0;
+}
+
+.catalog-main__title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+
+.catalog-main__slider {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.catalog-main__item {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: left;
+    min-height: 360px;
+    max-width: 280px;
+    width: 100%;
+    border-radius: 10px;
+    border: 1px solid #105FD3;
+    background: linear-gradient(273deg, #CCE1FF 0%, #FFF 51.56%, #D3FCFF 99.48%);
+    margin-right: 15px;
+    padding: 20px 0px 0px 15px;
+    position: relative;
+    overflow: hidden;
+}
+
+.catalog-main__item:last-child {
+    margin-right: 0;
+}
+
+.catalog-main__item h3 a {
+    position: relative;
+    color: #000;
+    font-family: Stolzl;
+    font-size: 22px;
+    font-weight: 500;
+    text-decoration: none;
+    line-height: 3px;
+}
+
+.catalog-main__item img {
+    position: absolute;
+    top: 25%;
+    right: 20;
+    max-width: 230px;
+    max-height: 230px;
+}
+
+.catalog-main__item .btn-radius {
+    position: absolute;
+    bottom: 0%;
+    right: 0;
+    width: 200px;
+    height: 40px;
+    border-radius: 10px 0 9px 0;
+    background-color: #105FD3;
+    text-align: right;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: #FFF;
+    font-family: Stolzl;
+    font-size: 14px;
+    font-weight: 400;
+    text-decoration: none;
+    border-left: 1px solid #105FD3;
+    border-top: 1px solid #105FD3;
+    transition: 0.2s;
+}
+
+.catalog-main__item .btn-radius:hover {
+    color: #105FD3;
+    background-color: #ffffff;
+    transition: 0.2s;
+}
+
+.catalog-main__title a {
+    width: 220px;
+}
+
 @media only screen and (max-width: 1400px) {
     .banner-slider {
         max-width: 800px;
@@ -609,6 +698,27 @@ h5 {
     .header-bottom__navbar ul li {
         list-style: none;
         margin-right: 30px;
+    }
+
+    .catalog-main__slider {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .catalog-main__item {
+        max-width: 400px;
+        width: 100%;
+        margin: 8px;
+        padding: 20px 15px 0 15px;
+    }
+    .catalog-main__item:last-child {
+        margin: 8px;
+    }
+
+    .catalog-main__item img {
+        top: 15% !important;
+        max-width: 330px;
+        max-height: 330px;
     }
 }
 
