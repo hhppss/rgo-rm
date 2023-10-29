@@ -1513,3 +1513,83 @@ h5 {
         margin-top: 20px;
     }
 }
+
+
+
+
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #0e2431 !important;
+    }
+    h1, h2, h3, h4, h5, h6 {
+        color: #fff;
+    }
+    
+    .header {
+        background-color: #0c2431;
+        box-shadow: 0px 0px 20px 0px #08161e;
+    }
+    .hamburger-lines span{
+        background-color:#99C8FF !important;
+    }
+    .menu-items {
+        background-color: #0c2431 !important;
+    }
+    .menu-items li a, .menu-items li span {
+        color: #fff;
+    }
+    .burger_phone a{
+        color: #105FD3 !important;
+    }
+    .header-menu li a{
+        color: #fff !important;
+    }
+    .header-top__address a {
+        color: #fff;
+    }
+    .header-bottom__phone span {
+        color: #fff;
+    }
+    .banner-form {
+        background: linear-gradient(89deg, #0E2431 -0.77%, #102D47 99.53%);
+        box-shadow: 0px 0px 14px 0px #153243;
+    }
+    .banner-form p, .banner-form h3 {
+        color: #fff;
+    }
+    .lead-banner {
+        background: linear-gradient(162deg, #0E2431 12.25%, #1E455C 89.52%);
+    }
+    .advantages-title, .catalog-main__item h3 a {
+        color: #fff;
+    }
+    .service {
+        background: linear-gradient(162deg, #132E3F 12.25%, #052B42 89.52%);
+    }
+    .service-item, .catalog-main__item {
+        background: linear-gradient(90deg, #0D1A21 0.28%, #042031 99.7%);
+        border: none;
+        transition: 0.2s;
+    }
+    .service-item:hover, .catalog-main__item:hover, .work-slider__item:hover {
+        box-shadow: 0px 0px 14px 0px #050c10 !important;
+        transition: 0.2s;
+    }
+    .slide-product-v1, .slide-product-v2 {
+        background: linear-gradient(162deg, #132E3F 12.25%, #052B42 89.52%);
+    }
+    .slide-product__item {
+        box-shadow: none;
+    }
+    .needhelp {
+        background-color: #042031;
+    }
+    .needhelp-container {
+        background: linear-gradient(89deg, #0E2431 -0.77%, #102D47 99.53%);
+    }
+    .work-slider__item {
+        background-color: #fff;
+        box-shadow: 0px 0px 14px 0px #0b2736 !important;
+    }
+  }
