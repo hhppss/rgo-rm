@@ -16,7 +16,7 @@
 <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
 </head>
 <body>
-    <header class="header">
+    <header class="header fixed-top">
         <div class="header-top">
             <div class="container">
                 <div class="row">
@@ -846,6 +846,7 @@
     <script type="text/javascript" src="slick/slick.min.js"></script>
 
     <script>
+
         $(document).ready(function(){
             $('.banner-slider').slick({
                 arrows: false,
@@ -853,13 +854,12 @@
                 slidesToScroll: 1,
                 dots: true,
                 customPaging : function(slider, i) {
-        return '<a href="#"><img src="img/slide-dot.png" /><img src="img/slide-dot-active.png" /></a>';
-    },
+                return '<a href="#"><img src="img/slide-dot.png" /><img src="img/slide-dot-active.png" /></a>';
+                },
             });
         });
-    </script>
 
-    <script>
+
     $(document).ready(function(){
         $('.slide-product__slider').slick({
             arrows: false,
